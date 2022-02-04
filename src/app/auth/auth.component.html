@@ -1,0 +1,26 @@
+<body class="text-center reg-container">
+
+  <main class="form-signin">
+    <form (submit)="signIn()">
+      <img class="mb-4" src="../../assets/img/icons/logo.png" alt="logo-img" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+
+      <div class="form-floating">
+        <label for="floatingInput">Your login</label>
+        <input [(ngModel)]="login" type="login" class="form-control" name="login" id="floatingLogin"
+          placeholder="login">
+      </div>
+
+      <div class="form-floating">
+        <label for="floatingPassword">Enter password</label>
+        <input [(ngModel)]="password" type="password" class="form-control" name="password" id="floatingPassword"
+          placeholder="Password">
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+    </form>
+  </main>
+
+</body>

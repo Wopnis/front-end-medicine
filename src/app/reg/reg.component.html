@@ -1,0 +1,43 @@
+<body class="text-center reg-container">
+
+  <main class="form-signin">
+    <form (submit)="signUp()">
+      <img class="mb-4" src="../../assets/img/icons/logo.png" alt="logo-img" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+
+      <div class="form-floating">
+        <label for="floatingInput">Name</label>
+        <input [(ngModel)]="name" type="name" class="form-control" name="name" id="floatingName" placeholder="Иван">
+      </div>
+      <div class="form-floating">
+        <label for="floatingInput">Last name</label>
+        <input [(ngModel)]="lastname" type="name" class="form-control" name="lastname" id="floatingLastName"
+          placeholder="Иванов">
+      </div>
+      <div class="form-floating">
+        <label for="floatingInput">Your position</label>
+        <input [(ngModel)]="position" type="text" class="form-control" name="position" id="floatingPosition"
+          placeholder="терапевт">
+      </div>
+      <div class="form-floating">
+        <label for="floatingInput">Your login</label>
+        <input [(ngModel)]="login" type="login" class="form-control" name="login" id="floatingLogin"
+          placeholder="login">
+      </div>
+      <div class="form-floating">
+        <label for="floatingInput">Enter email address</label>
+        <input [(ngModel)]="email" type="email" class="form-control" name="email" id="floatingInput"
+          placeholder="name@example.com">
+      </div>
+      <div class="form-floating">
+        <label for="floatingPassword">Enter password</label>
+        <input [(ngModel)]="password" type="password" class="form-control" name="password" id="floatingPassword"
+          placeholder="Password">
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+    </form>
+  </main>
+
+</body>
