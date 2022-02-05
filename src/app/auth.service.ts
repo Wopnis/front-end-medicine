@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import { map } from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -9,6 +10,8 @@ export class AuthService {
 
   user: any
   token: any
+
+
 
   constructor(
     private http: Http
@@ -38,4 +41,8 @@ export class AuthService {
       this.user = null
       localStorage.clear()
     }
+    isloggedIn(): boolean{
+      return !!this.token
+    }
+
 }
