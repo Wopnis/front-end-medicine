@@ -1,4 +1,4 @@
-# FrontEndMedicine - application for private medical clinic, front-end part.
+# FrontEndMedicine - application for private medical clinic, front-end part. Angular app.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
